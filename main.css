@@ -1,0 +1,41 @@
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+}
+
+img{
+    width:20%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    line-height: 60px;
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover{
+    text-decoration: underline 1px;
+    color: #c58929;
+}
+
+b{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 16 px;
+    line-height: 60px;
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+b:hover{
+    text-decoration: underline 1px;
+    color: #c58929;
+}
