@@ -1,0 +1,88 @@
+<doctype html>
+    <html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv='X-UA-Cmpatible' conter>
+        <title>Contact</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' type='text/css' media='screen' href='contact.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Knewave&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="logo.png" alt="logo" title="logo BCTN">
+            <nav>
+                <div class="left-links">
+                    <a href="accueil.html">ACCUEIL</a>
+                    <a href="agenda.html">AGENDA</a>
+                    <a href="galerie.html">GALERIE</a>
+                </div>
+                <div class="right-links">
+                    <a href="contact.html">CONTACT</a>
+                    <a href="inscription.html" class="inscrire">S'INSCRIRE</a>
+                </div>
+            </nav>
+        </header>
+
+        <div class="hero-contact">
+            <h4>Nous</h4>
+            <h5> contacter</h5>
+        </div>
+
+    <div class="contact" width="1000px" height="800px" >
+        <div class="contact1">
+        <p>TÉLÉPHONE :</p><a href="tel:+330615166257">06.15.16.62.57</a><br><br>
+        </div><div class="contact2">
+        <p>E-MAIL :</p><a href="mailto:bctn@gmail.com"> bctn@gmail.com</a><br><br>
+        </div><div class="contact3">
+        <p>FACEBOOK :</p><a href="https://www.facebook.com/people/Badminton-club-de-Theix-Noyalo/100057411492614/?ref=embed_page">Badminton club de Theix-Noyalo</a><br><br>
+        </div><div class="contact3">
+        <p>LOCALISATION :</p><a href="https://www.google.fr/maps/place/Rue+du+G%C3%A9n%C3%A9ral+de+Gaulle,+56450+Theix-Noyalo/@47.6295817,-2.6528515,17z/data=!3m1!4b1!4m6!3m5!1s0x480fe3b14c91313d:0x953d6d3216fc5f64!8m2!3d47.6295817!4d-2.6502766!16s%2Fg%2F1pv5w2nwg?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D">Rue du Général de Gaulle, 56450 Theix-Noyalo</a><br><br>
+        </div>
+    </div>
+   
+
+
+   <footer class="footer">
+        <div class="lien.footer">
+            <b href="#">À propos du BCTN</b>
+            <b href="#">Conditions générales</b>
+            <b href="#">Politiques de confidentialité</b>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+    <script>
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+            direction: 'vertical', // vertical, horizontal
+            gestureDirection: 'vertical', // vertical, horizontal, both
+            smooth: true,
+            mouseMultiplier: 1,
+            smoothTouch: false,
+            touchMultiplier: 2,
+            infinite: false,
+        })
+        //get scroll value
+        lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+            console.log({ scroll, limit, velocity, direction, progress })
+        })
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+        requestAnimationFrame(raf)
+    </script>
+</htmL>
+</doctype>
+
+
+
+
+

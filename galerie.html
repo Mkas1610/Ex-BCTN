@@ -1,17 +1,75 @@
 <doctype html>
-    <html>
+    <html lang="fr">
     <head>
         <meta charset="utf-8">
         <meta http-equiv='X-UA-Cmpatible' conter>
         <title>BCTN</title>
-        <meta name='viewport' content='width=device-width' , initial-scale='1'>
-        <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='galerie.css'>
+        <script src='main.js'></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Knewave&display=swap" rel="stylesheet">
     </head>
+
 
     <body>
 
 
+        <header>
+            <img class="logo" src="logo.webp" alt="logo" title="logo BCTN">
+            <nav>
+                <div class="left-links">
+                    <a href="accueil.html">ACCUEIL</a>
+                    <a href="agenda.html">AGENDA</a>
+                    <a href="galerie.html">GALERIE</a>
+                </div>
+                <div class="right-links">
+                    <a href="contact.html">CONTACT</a>
+                    <a href="inscription.html" class="inscrire">S'INSCRIRE</a>
+                </div>
+            </nav>
+        </header>
+
+        <div class="hero-contact">
+            <h4>Notre</h4>
+            <h5> Galerie</h5>
+        </div>
+        <div>
+            <img src="galerie.webp" class=galerie alt="galerie d'images de volants, de personnes, et de raquette" width="1300px" height="1300px">
+        </div>
 
 
-    </body>
+        <footer class="footer">
+            <div class="lien.footer">
+                <b href="#">À propos du BCTN</b>
+                <b href="#">Conditions générales</b>
+                <b href="#">Politiques de confidentialité</b>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+        <script>
+            const lenis = new Lenis({
+                duration: 1.2,
+                easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+                direction: 'vertical', // vertical, horizontal
+                gestureDirection: 'vertical', // vertical, horizontal, both
+                smooth: true,
+                mouseMultiplier: 1,
+                smoothTouch: false,
+                touchMultiplier: 2,
+                infinite: false,
+            })
+            //get scroll value
+            lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+                console.log({ scroll, limit, velocity, direction, progress })
+            })
+            function raf(time) {
+                lenis.raf(time)
+                requestAnimationFrame(raf)
+            }
+            requestAnimationFrame(raf)
+        </script>
+</body>
     </html> 

@@ -1,0 +1,81 @@
+.contact{
+    background-color: #46a08b5d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: center;
+    margin: 50px;
+    margin-left: 200px;
+    border-radius: 50px;
+    font-family: "inter";
+    font-size: 28px;
+    padding: 50px;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: "knewave"; 
+    margin: 0; /* Enlève l'espace par défaut autour des titres */
+    line-height: 1.2; /* Ajuste l'espacement vertical entre les lignes */
+    color: #212121;
+    margin-bottom:10px;
+    margin-right: 10px;
+}
+
+
+.hero-contact {
+    font-size: 40px;
+    font-family: "knewave";
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+h5{
+    font-size: 40px;
+    background-color: #46A08B;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px rgba(191, 191, 191, 0.5); /* Ombre subtile */
+    color: #212121;
+}
+
+p{
+    color:#46A08B;
+    font-size: 24px;
+    text-align: center;
+}
+
+a{
+    height: fit-content;
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 20px;
+    background-color: #46A08B;
+    color: #FFFEF2;
+    border-radius: 20px;
+    font-family: "inter";
+    text-align: center;
+}
+
+.contact1{
+    display: flex;
+}
+
+.contact2{
+    display: flex;
+}
+.contact3{
+    display: flex;
+}
+.contact4{
+    display: flex;
+}

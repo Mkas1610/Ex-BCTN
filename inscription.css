@@ -1,0 +1,89 @@
+#inscription {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    padding:10px;
+    font-family: inter;
+    margin-bottom: 40px;
+    padding-top: 150px;
+}
+#inscription input {
+    height: 20px;
+}
+#inscription textarea {
+    height: 240px;
+    resize:none
+}
+
+#couverture {
+    display: flex;
+    width: 40%;
+    height: 620px;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://cdn.dribbble.com/userupload/5992977/file/original-6b83d3befaf8bb1b2f88b98adc4668d1.png");
+    background-position: center;
+    background-size: cover;
+}
+#inscform {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 620px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 10px;
+}
+#inscform input, #inscform textarea {
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+}
+.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mail input {
+    width: 100%;
+}
+.mail ul {
+    margin: 0;
+}
+.msg textarea {
+    width: 100%;
+}
+#send {
+    width: 100%;
+}
+
+input, textarea{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: inter;
+    text-indent:10px;
+}
+
+#formulaire button {
+    font-family: inter;
+    border: none;
+    background-color: #46A08B;
+    border-radius: 5px;
+    padding: 10px;
+    color: #f7f7f7;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+#formulaire button:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    padding: 0px 25px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

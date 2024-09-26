@@ -1,0 +1,229 @@
+.hero {
+    display: flex;
+    align-items: center; /* Centre verticalement l'image et le texte */
+    height: 80vh; /* Définit la hauteur de la section à 100% de la vue */
+    background-color: #FFFEF2;
+    padding-right: 100px;
+    padding-top: 100px;
+}
+.image-container {
+    width:50%;
+    margin-left: 100px;
+    display: flex;
+    img{
+        width:80%;
+    }
+    justify-content: flex-start;
+}
+.centered-image {
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+.hero-text {
+    margin-left: 10px; 
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    font-family: "inter",Arial, Helvetica, sans-serif;
+    margin: 0; 
+    line-height: 1.2; 
+    color: #212121;
+}
+
+.hero-text h2 {
+    font-size: 50px;
+    font-family: "inter"; 
+    margin: 0; 
+    line-height: 1.2;
+    color: #212121;
+    padding-left: 20px;
+}
+
+.hero-text strong {
+    font-size: 70px;
+    font-family: "knewave"; 
+    margin: 0; /* Enlève l'espace par défaut autour des titres */
+    line-height: 1.2; /* Ajuste l'espacement vertical entre les lignes */
+    color: #212121;
+    padding-right: 10px;
+}
+
+h1 {
+    background-color: #46A08B;
+    padding: 0px 25px; /* Espace interne pour créer l'encadré */
+    border-radius: 40px;
+    box-shadow: 0px 0px 5px rgba(191, 191, 191, 0.5); /* Ombre subtile */
+    color: #333;
+}
+
+.image-container2 {
+    width: 100%;
+    padding: 20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFEF2;
+    height: 100vh;
+    img{
+        width: 30%;
+    }
+}
+
+/* Style de l'image avec animation */
+.scroll-image {
+    opacity: 0; /* L'image est invisible au début */
+    transform: translateY(50px); /* L'image commence 50px plus bas */
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 1s; /* Retard avant que l'animation commence */
+}
+
+/* Animation pour faire apparaître l'image */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0); /* L'image revient à sa position d'origine */
+    }
+}
+
+h3{
+    padding-top:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFEF2;
+    font-family: "knewave";
+    font-size: 40px;
+}
+
+.phrase{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFEF2;
+    font-family: "knewave";
+    font-size: 40px;
+
+}
+
+.button-link {
+    font-family: "knewave";
+    font-size: 29px;
+    background-color: #46A08B; 
+    color: #FFFEF2;
+    padding: 5px 20px; /* Espace interne autour du texte */
+    border-radius: 40px; /* Coins arrondis */
+    text-decoration: none; /* Enlève le soulignement */
+    font-weight: bold; /* Texte en gras pour accentuer */
+    transition: transform 1s ease;
+}
+
+.button-link:hover {
+    background-color: #46A08B; /* Changement de couleur au survol */
+}
+
+.salles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFEF2;
+
+}
+
+.imgsalles {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.sal1, .sal2 {
+    margin: 20px;
+    justify-content: center;
+    align-items: end;
+    width: 600px;
+    height: 20vw;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 20px;
+}
+.sal1 {
+    background-image: url("https://s2.static-clubeo.com/uploads/bctheixnoyalo/grounds/pierre-dosse__od5i3f.jpg");
+}
+.sal2 {
+    background-image: url("https://s2.static-clubeo.com/uploads/bctheixnoyalo/grounds/jean-touze__od5guh.jpg");
+}
+
+.sal1 p, .sal2 p {
+    color: #212121;
+    background-color: #fffef2ba;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: inter;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.sal1:hover, .sal2:hover {
+    transition: all 0.2s ease;
+    transform: scale(1.05);
+}
+
+.dirig {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: center;
+}
+.dirig1, .dirig2, .dirig3 {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #46A08B;
+    border-radius: 20px;
+    margin: 20px;
+}
+.dirig1 p, .dirig2 p, .dirig3 p {
+    font-size: 16px;
+    font-family: inter;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 10px;
+}
+.photo1{
+    background-image: url("https://s1.static-clubeo.com/750/uploads/bctheixnoyalo/executives/jerome-cabioch2__rz2pxz.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+.photo2{
+    background-image: url("https://s1.static-clubeo.com/750/uploads/bctheixnoyalo/executives/sandrine-le-devedec2__rz2pw9.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+.photo3{
+    background-image: url("https://s3.static-clubeo.com/750/uploads/bctheixnoyalo/executives/christophe-laisse__rz2pzx.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+
+
