@@ -1,9 +1,9 @@
-<doctype html>
+<!doctype html>
     <html lang="fr">
 
     <head>
         <meta charset="utf-8">
-        <meta http-equiv='X-UA-Cmpatible' conter>
+        <meta http-equiv='X-UA-Compatible' content="IE=edge">
         <title>Contact</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel='stylesheet' type='text/css' media='screen' href='contact.css'>
@@ -11,11 +11,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Knewave&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
     </head>
 
     <body>
         <header>
-            <img class="logo" src="logo.png" alt="logo" title="logo BCTN">
+            <a href="./accueil.html"><img class="logo" src="logo.png" alt="logo" title="logo BCTN"></a>
             <nav>
                 <div class="left-links">
                     <a href="accueil.html">ACCUEIL</a>
@@ -34,7 +35,7 @@
             <h5> contacter</h5>
         </div>
 
-    <div class="contact" width="1000px" height="800px" >
+    <div class="contact">
         <div class="contact1">
         <p>TÉLÉPHONE :</p><a href="tel:+330615166257">06.15.16.62.57</a><br><br>
         </div><div class="contact2">
@@ -46,17 +47,14 @@
         </div>
     </div>
    
-
-
    <footer class="footer">
         <div class="lien.footer">
-            <b href="#">À propos du BCTN</b>
-            <b href="#">Conditions générales</b>
-            <b href="#">Politiques de confidentialité</b>
+            <a href="#">À propos du BCTN</a>
+            <a href="#">Conditions générales</a>
+            <a href="#">Politiques de confidentialité</a>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
     <script>
         const lenis = new Lenis({
             duration: 1.2,
@@ -79,10 +77,5 @@
         }
         requestAnimationFrame(raf)
     </script>
+    </body>
 </htmL>
-</doctype>
-
-
-
-
-

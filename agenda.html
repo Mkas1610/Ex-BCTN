@@ -1,20 +1,23 @@
-<!DOCTYPE html>
-    <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv='X-UA-Compatible' content="IE=edge">
-        <title>agenda</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel='stylesheet' type='text/css' media='screen' href='agenda.css'>
-        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv='X-UA-Compatible' content="IE=edge">
+    <title>agenda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' type='text/css' media='screen' href='agenda.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Knewave&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Knewave&display=swap"
+        rel="stylesheet">
+</head>
 
-    </head>
+<body>
     <header>
-        <a href="/accueil.html"><img class="logo" src="logo.png" alt="logo" title="logo BCTN"></a>
+        <a href="./accueil.html"><img class="logo" src="logo.png" alt="logo" title="logo BCTN"></a>
         <nav>
             <div class="left-links">
                 <a href="accueil.html">ACCUEIL</a>
@@ -27,67 +30,61 @@
             </div>
         </nav>
     </header>
-
-    <body>
-        <div class="hero-agenda">
-            <h4>Notre</h4>
-            <h5> Agenda</h5>
-        </div>
-        <div class="agenda">
-            <div class="ag1">
-                <div class="calendar">
-                    <div class="calendhead">
-                        <h3></h3>
-                        <div>
-                            <button id="prev"></button>
-                            <button id="next"></button>
-                        </div>
-                    </div>
+    <div class="hero-agenda">
+        <h4>Notre</h4>
+        <h5> Agenda</h5>
+    </div>
+    <div class="agenda">
+        <div class="ag1">
+            <div class="calendar">
+                <div class="calendhead">
+                    <h3>''</h3>
                     <div>
-                        <ul class="days">
-                            <li>Sun</li>
-                            <li>Mon</li>
-                            <li>Tue</li>
-                            <li>Wed</li>
-                            <li>Thu</li>
-                            <li>Fri</li>
-                            <li>Sat</li>
-                        </ul>
-                        <ul class="dates"></ul>
+                        <button id="prev"></button>
+                        <button id="next"></button>
                     </div>
                 </div>
-            </div>
-            <div class="ag2">
-                <div class="event1">
-                    <div class="line1">
-                        <h1>Vendredi 20 Septembre</h1>
-                        <h2>9h - 11h</h2>
-                    </div>
-                    <p>Match amical contre le BC Vannes</p>
-                </div>
-                <div class="event2">
-                    <div class="line1">
-                        <h1>Vendredi 20 Septembre</h1>
-                        <h2>13h - 15h</h2>
-                    </div>
-                    <p>Match amical contre le BC Auray</p>
+                <div>
+                    <ul class="days">
+                        <li>Sun</li>
+                        <li>Mon</li>
+                        <li>Tue</li>
+                        <li>Wed</li>
+                        <li>Thu</li>
+                        <li>Fri</li>
+                        <li>Sat</li>
+                    </ul>
+                    <ul class="dates"></ul>
                 </div>
             </div>
         </div>
-        <script src="main.js" defer>
+        <div class="ag2">
+            <div class="event1">
+                <div class="line1">
+                    <h1>Vendredi 20 Septembre</h1>
+                    <h2>9h - 11h</h2>
+                </div>
+                <p>Match amical contre le BC Vannes</p>
+            </div>
+            <div class="event2">
+                <div class="line1">
+                    <h1>Vendredi 20 Septembre</h1>
+                    <h2>13h - 15h</h2>
+                </div>
+                <p>Match amical contre le BC Auray</p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js" defer>
 
-        </script>
-    </body>
-
+    </script>
     <footer class="footer">
         <div class="lien.footer">
-            <b href="#">À propos du BCTN</b>
-            <b href="#">Conditions générales</b>
-            <b href="#">Politiques de confidentialité</b>
+            <a href="#">À propos du BCTN</a>
+            <a href="#">Conditions générales</a>
+            <a href="#">Politiques de confidentialité</a>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
     <script>
         const lenis = new Lenis({
             duration: 1.2,
@@ -109,6 +106,6 @@
             requestAnimationFrame(raf)
         }
         requestAnimationFrame(raf)
-    </script>
+    </script>    
+</body>
 </html>
-</doctype html>
