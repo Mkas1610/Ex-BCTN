@@ -1,1 +1,118 @@
-body,header{background-color:#fffef2}header,nav{width:100%;display:flex}.inscrire,nav a{border-radius:20px}.inscrire:hover,nav a:hover{box-shadow:0 0 10px rgba(164,164,164,.7);transform:scale(1.1)}.inscrire,.inscrire:hover,footer{background-color:#46a08b}footer,footer a,header,nav{display:flex}footer a,nav a{text-decoration:none}*{margin:0;padding:0}.right-links{padding-right:60px}header{flex-direction:row;position:fixed;top:0;left:0;z-index:1000;box-shadow:2px 2px 5px rgba(0,0,0,.1);padding:10px 20px}nav{justify-content:space-between;align-items:center}.logo{height:fit-content;width:20%;max-width:80px;margin:10px 10px 10px 100px}nav a{background-color:#171717;padding:8px;display:inline-block;box-shadow:0 0 5px rgba(40,40,40,.5);font-family:inter;font-size:14px;color:#fff;margin:0 20px;transition:transform 1s}nav a:hover{background-color:#4a4a4a}.inscrire{color:#000}footer{flex-direction:row;justify-content:space-between;padding:50px}footer a{justify-content:space-between;align-items:center;color:#000;font-size:16 px;font-family:Arial,Helvetica,sans-serif}footer a:hover{text-decoration:underline 1px;color:#142824}header img{transition:.3s;transform:scale(2)}header img:hover{transform:scale(1.5)}
+body,
+header {
+    background-color: #fffef2
+}
+
+header,
+nav {
+    width: 100%;
+    display: flex
+}
+
+.inscrire,
+nav a {
+    border-radius: 20px
+}
+
+.inscrire:hover,
+nav a:hover {
+    box-shadow: 0 0 10px rgba(164, 164, 164, .7);
+    transform: scale(1.1)
+}
+
+.inscrire,
+.inscrire:hover,
+footer {
+    background-color: #46a08b
+}
+
+footer,
+footer a,
+header,
+nav {
+    display: flex
+}
+
+footer a,
+nav a {
+    text-decoration: none
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+.right-links {
+    padding-right: 60px
+}
+
+header {
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
+    padding: 10px 20px
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center
+}
+
+.logo {
+    height: fit-content;
+    width: 20%;
+    max-width: 80px;
+    margin: 10px 10px 10px 100px
+}
+
+nav a {
+    background-color: #171717;
+    padding: 8px;
+    display: inline-block;
+    box-shadow: 0 0 5px rgba(40, 40, 40, .5);
+    font-family: inter;
+    font-size: 14px;
+    color: #fff;
+    margin: 0 20px;
+    transition: transform 1s
+}
+
+nav a:hover {
+    background-color: #4a4a4a
+}
+
+.inscrire {
+    color: #000
+}
+
+footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px
+}
+
+footer a {
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    font-size: 16 px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+footer a:hover {
+    text-decoration: underline 1px;
+    color: #142824
+}
+
+header img {
+    transition: .3s;
+    transform: scale(2)
+}
+
+header img:hover {
+    transform: scale(1.5)
+}
